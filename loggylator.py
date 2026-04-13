@@ -1,4 +1,3 @@
-import re
 import sys
 from collections import Counter
 
@@ -7,8 +6,6 @@ LEVELS=("ERROR", "CAUTION", "WARNING")
 def analyze_log(path: str):
     counts = Counter()
     matched_lines = []
-
-    level_pattern = re.compile(r"\b(ERROR|CAUTION|WARNING)\b", re.IGNORECASE)
 
     with open(path, "r", encoding="utf-8", errors="ignore") as f:
         lines = f.readlines()
