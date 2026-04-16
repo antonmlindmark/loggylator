@@ -44,7 +44,7 @@ def main(page: ft.Page):
         return counts, found, used_encoding
     info_text = ft.Text("Ingen fil vald")
     counts_text = ft.Text("")
-    result_list = ft.Column(scroll=ft.Scrollmode.AUTO, height=420)
+    result_list = ft.Column(scroll=ft.ScrollMode.AUTO, height=420)
     def show_selected(level: str):
         result_list.controls.clear()
         for tag, msg in matched_lines:
