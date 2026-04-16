@@ -60,9 +60,9 @@ def main(page: ft.Page):
             label="Välj Felmeddelande",
             width=220,
             options=[
-                ft.DropdownOption("Error"),
-                ft.DropdownOption("Warning"),
-                ft.DropdownOption("Caution"),
+                ft.DropdownOption("ERROR"),
+                ft.DropdownOption("WARNING"),
+                ft.DropdownOption("CAUTION"),
             ]
         )
 
