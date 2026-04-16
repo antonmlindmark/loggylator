@@ -49,7 +49,7 @@ def main(page: ft.Page):
         result_list.controls.clear()
         for tag, msg in matched_lines:
             if tag == level:
-                result_list.controls.append(ft.Text("msg"))
+                result_list.controls.append(ft.Text(msg))
         if not result_list.controls:
             result_list.controls.append(ft.Text("Inga loggar för val."))
         page.update()
