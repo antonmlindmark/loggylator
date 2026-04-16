@@ -71,7 +71,7 @@ def main(page: ft.Page):
 
     async def choose_file(e):
         nonlocal matched_lines
-        file = await ft.FilePicker().pick_files(allow_multiple=True)
+        files = await ft.FilePicker().pick_files(allow_multiple=True)
         if not files:
             return
         counts, matched, enc = analyze_log(files[0].path)
